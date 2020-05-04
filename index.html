@@ -10,23 +10,31 @@
 
 
 <body>
-h1 {
-  position: absolute;
-  left: 100px;
-  top: 150px;
+
+<style>
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-<center><h1 style="color:red">My School-Work Checklist</h1>
-<center><p style="color:white">Hello everyone and welcome to your homework checklist! </p>
+</style>
+
+
+<div class="center">
+	<center><h1 style="color:red">My School-Work Checklist</h1>
+	<center><p style="color:white">Hello everyone and welcome to your homework checklist! </p>
+	<center><input type="checkbox" id="assignment1" name="assignment1" value="Assignment 1">
+	<label for="assignment1" style="color:white"> Homework assigment 1</label><br>
+	<center><input type="checkbox" id="assignment2" name="assignment2" value="Assignment 2">
+	<label for="assignment2" style="color:white"> Homework assigment 2</label><br>
+	<center><input type="checkbox" id="assignment3" name="assignment3" value="Assignment 3">
+	<label for="assignment3" style="color:white"> Homework assigment 2</label><br>
+</div>
 
 </body>
 </html>
-
-<center><input type="checkbox" id="assignment1" name="assignment1" value="Assignment 1">
-<label for="assignment1" style="color:white"> Homework assigment 1</label><br>
-<center><input type="checkbox" id="assignment2" name="assignment2" value="Assignment 2">
-<label for="assignment2" style="color:white"> Homework assigment 2</label><br>
-<center><input type="checkbox" id="assignment3" name="assignment3" value="Assignment 3">
-<label for="assignment3" style="color:white"> Homework assigment 2</label><br>
 
 <style>
  
@@ -38,4 +46,9 @@ body {
   background-size: 960px 638px;
 }
 
-
+body,
+html{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
